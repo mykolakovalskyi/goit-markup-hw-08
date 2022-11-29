@@ -3,6 +3,7 @@
   justify-content: center;
   gap: 30px;
   list-style: none;
+  flex-wrap: wrap;
 
   &__client {
     border: 1px solid var(--icon-color);
@@ -10,6 +11,14 @@
     fill: var(--icon-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 208px;
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 168px;
+    }
 
     &:hover {
       fill: var(--hover-and-button-color);

@@ -10,3 +10,14 @@
     margin: 0 auto;
   }
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .background-image {
+    background: linear-gradient(#2f303a66, #2f303a66),
+      url(../images/new_photo@2x.jpg);
+    background-position: 50% 35%;
+    background-size: cover;
+  }
+}

@@ -1,10 +1,27 @@
 .footer {
   display: flex;
-  gap: 70px;
+  gap: 60px;
   padding-block: 60px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+    flex-wrap: nowrap;
+  }
 
   &__logo {
     color: var(--text-color-2);
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 
   &__address {
@@ -13,13 +30,22 @@
     gap: 9px;
     margin-top: 20px;
 
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-right: 84px;
+      margin-left: 76px;
+    }
+
     &--text {
       color: var(--text-color-2);
       font-style: normal;
       font-size: 14px;
       line-height: 146%;
       letter-spacing: 0.03em;
-      text-align: left;
+      text-align: center;
+
+      @media screen and (min-width: 1200px) {
+        text-align: left;
+      }
     }
   }
   &__contacts {
@@ -61,8 +87,12 @@
   }
   &__newsletter {
     position: relative;
-    margin-left: 8px;
-    padding-top: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      padding-top: 46px;
+      margin-left: 8px;
+    }
   }
 
   &__fieldset {
@@ -72,7 +102,11 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-right: 12px;
     margin-left: 0;
-    box-shadow: 0px 4px 4px 0px #00000026;
+
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
+      margin-bottom: 20px;
+      width: 420px;
+    }
   }
 
   &__submit {
@@ -106,6 +140,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__send-icon {
@@ -115,9 +154,11 @@
 
   &__label {
     font-weight: 700;
-    position: absolute;
-    top: 12px;
-    padding: 0;
-    margin: 0;
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: 12px;
+      padding: 0;
+      margin: 0;
+    }
   }
 }

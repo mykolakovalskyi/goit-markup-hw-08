@@ -1,5 +1,19 @@
 .section {
-  padding-block: 94px;
+  padding-block: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-block: 94px;
+  }
+
+  &--different-padding-bottom {
+    @media screen and (min-width: 768px) {
+      padding-bottom: 45px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 0;
+    }
+  }
 
   &--background-white {
     background-color: var(--background-color-1);
@@ -7,5 +21,13 @@
 
   &--background-grey {
     background-color: var(--background-color-3);
+  }
+
+  &--invisible {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 }

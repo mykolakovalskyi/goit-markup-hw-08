@@ -4,4 +4,12 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+
+  &--invisible {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
 }

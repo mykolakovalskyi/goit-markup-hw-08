@@ -5,6 +5,13 @@
   text-align: left;
   margin-bottom: 10px;
 
+  &--centered {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &--white {
     color: var(--text-color-2);
     text-transform: uppercase;
