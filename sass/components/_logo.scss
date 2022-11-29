@@ -1,0 +1,13 @@
+.logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  &--blue {
+    color: var(--hover-and-button-color);
+  }
+}

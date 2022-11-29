@@ -1,0 +1,12 @@
+.background-image {
+  background-color: var(--background-color-2);
+  background: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/new_photo.jpg);
+  max-width: 1600px;
+  background-position: 50% 35%;
+  background-size: cover;
+
+  &--position {
+    margin: 0 auto;
+  }
+}
