@@ -58,6 +58,66 @@
             </li>
           </ul>
         </div>
+
+        <button
+          class="header__menu-batton js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg height="40" width="40">
+            <use href="./images/icons.svg.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="mobile-menu__close-button js-close-menu">
+          <svg height="18.67px" width="18.67px">
+            <use href="./images/icons.svg.svg#icon-Vector"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__navigation-list">
+          <li>
+            <a href="./index.html" class="mobile-menu__navigation-link"
+              >Agencja</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__navigation-link"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="#" class="mobile-menu__navigation-link">Kontakt</a></li>
+        </ul>
+
+        <ul class="mobile-menu__contacts-list">
+          <li>
+            <a href="tel:+48111111111" class="mobile-menu__phone">
+              +48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__social">
+            <a href="#" class="mobile-menu__social-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__social">
+            <a href="#" class="mobile-menu__social-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__social">
+            <a href="#" class="mobile-menu__social-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__social mobile-menu__social--no-border">
+            <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -339,9 +399,7 @@
             </address>
           </div>
           <div>
-            <h3
-              class="title-secondary title-secondary--white title-secondary--centered"
-            >
+            <h3 class="title-secondary title-secondary--white">
               Dołącz do nas
             </h3>
             <ul class="footer__socials">
@@ -370,7 +428,7 @@
           <form name="newsletter-agreement" class="footer__newsletter">
             <label
               for="newsletter-mail"
-              class="title-secondary title-secondary--white title-secondary--centered footer__label"
+              class="title-secondary title-secondary--white footer__label"
               >Zapisz się do newslettera</label
             >
             <div class="footer__email">
@@ -393,5 +451,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -17,5 +17,10 @@
     text-transform: uppercase;
     padding-top: 12px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

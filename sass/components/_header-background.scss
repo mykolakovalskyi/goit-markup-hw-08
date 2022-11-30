@@ -1,5 +1,13 @@
 .header-background {
   background-color: var(--background-color-1);
   border-bottom: 1px solid #ececec;
-  padding-block: 24px;
+  padding-block: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-block: 24px;
+  }
 }
