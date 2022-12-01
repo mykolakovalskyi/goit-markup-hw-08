@@ -96,16 +96,20 @@
   }
 
   &__fieldset {
+    box-sizing: border-box;
     padding-block: 13px;
     padding-left: 16px;
     box-shadow: 0px 4px 4px 0px #00000026;
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-right: 12px;
-    margin-left: 0;
+    max-width: 450px;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 20px;
+    }
 
     @media screen and (min-width: 480px) and (max-width: 1200px) {
-      margin-bottom: 20px;
-      width: 420px;
+      width: 450px;
     }
   }
 

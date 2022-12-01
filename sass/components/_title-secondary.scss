@@ -6,7 +6,7 @@
   margin-bottom: 10px;
 
   &--centered {
-    @media screen and (min-width: 480px) and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       display: flex;
       justify-content: center;
     }
@@ -18,7 +18,7 @@
     padding-top: 12px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 480px) and (max-width: 1200px) {
+    @media screen and (max-width: 1200px) {
       display: flex;
       justify-content: center;
     }
