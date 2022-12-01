@@ -59,11 +59,26 @@
   &__overlay-text {
     color: var(--text-color-2);
     padding-left: 24px;
-    padding-right: 45px;
-    padding-block: 49px;
-    font-size: 18px;
-    line-height: 28px;
+    padding-right: 24px;
+    padding-block: 20px;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 480px) {
+      padding-block: 77px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-block: 29px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-right: 45px;
+      padding-block: 49px;
+    }
   }
 }
 
