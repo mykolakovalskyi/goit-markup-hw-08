@@ -57,7 +57,7 @@
   }
 
   &--footer {
-    width: 324px;
+    width: 100%;
     font-size: 16px;
     line-height: 125%;
     letter-spacing: 0.03em;
@@ -66,6 +66,10 @@
 
     &::placeholder {
       color: #ffffff99;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 324px;
     }
   }
 }

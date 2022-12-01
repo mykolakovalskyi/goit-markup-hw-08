@@ -3,12 +3,13 @@
   flex-direction: column;
   max-width: 365px;
   align-items: center;
-  padding-block: 200px;
+  padding-block: 118px;
   padding-left: auto;
   padding-right: auto;
 
   @media screen and (min-width: 1200px) {
     max-width: 696px;
+    padding-block: 200px;
   }
 
   &__header {
