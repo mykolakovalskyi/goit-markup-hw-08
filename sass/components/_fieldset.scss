@@ -42,10 +42,15 @@
   }
 
   &--coment {
-    width: 414px;
+    width: 100%;
     height: 96px;
     resize: none;
     padding: 0;
+
+    @media screen and (min-width: 480px) {
+      width: 336px;
+      height: 96px;
+    }
 
     &::placeholder {
       font-weight: 400;

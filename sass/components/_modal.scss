@@ -1,6 +1,7 @@
 .modal {
-  width: 448px;
-  height: 501px;
+  box-sizing: border-box;
+  max-width: 450px;
+  height: 609px;
   background-color: var(--background-color-1);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -8,6 +9,11 @@
   border-radius: 4px;
   position: relative;
   padding: 40px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    height: 581px;
+  }
 
   &--position {
     margin: auto;
@@ -46,13 +52,20 @@
     }
   }
   &__checkbox-label {
-    font-size: 14px;
-    line-height: 171%;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--text-color-1);
     position: relative;
-    padding-left: 37px;
+    padding-left: 27px;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 37px;
+      font-size: 14px;
+      line-height: 171%;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__terms-checkbox {
@@ -67,7 +80,7 @@
 .modal__checkbox-icon {
   position: absolute;
   display: block;
-  left: 14px;
+  left: 0px;
   top: 0;
   padding: 0;
   fill: var(--text-color-2);
@@ -75,6 +88,10 @@
   border: 1px solid #212121;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    left: 14px;
+  }
 
   .modal__checkbox-label input:checked ~ & {
     border-color: var(--hover-and-button-color);
